@@ -1,0 +1,15 @@
+--Use this SQL queries on HSQL DB Manager for quick testing or write your own :)
+
+select * from users
+
+
+select * from users
+where name like '%Alex%'
+
+
+select
+u.id, u.name,a.name, t.seat, t.price, e.name, e.dateevent
+    from users u
+left join tickets t on u.id = t.iduser
+left join events e on t.idevent = e.id
+left join auditoriums a on e.idauditorium = a.id

@@ -1,0 +1,2 @@
+This package hold POJO classes which are simply described.
+This object are not not bound by any restriction other than those forced by the Java Language Specification.
